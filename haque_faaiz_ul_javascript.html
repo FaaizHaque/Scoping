@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+JavaScript Examples <br>
+<script>
+
+
+function f1() {
+        var a; //local to f1
+        a = 4;
+        c = 10; //global
+        function f2() {
+                var b; //local to f2
+                b = 3;
+                alert("a= " + a + " b= "+ b + "in f2"); //a= 4 b = 3
+        }
+        f2();
+}
+
+function f3() {
+	alert("c= " + c " in f3" );
+}
+</script>
+</head>
+<body>
+<button type="button" onclick="f1()">call f1()</button>
+<button type="button" onclick="f3()">call f3()</button>
+</body>
+</html>
+
